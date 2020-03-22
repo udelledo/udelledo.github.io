@@ -39,4 +39,4 @@ Adapting the information found in the two links above I ended up having a new fi
 
 Another possible security measure could be to enable some protection against DoS and DDoS and for this the `mod_evasive` module come to help as mentioned in this [nice tutorial](https://www.digitalocean.com/community/tutorials/how-to-protect-against-dos-and-ddos-with-mod_evasive-for-apache-on-centos-7) 
 
-Now I should receive email notification every time something _funny_ is happening on my server.
+After configuring [sendmail](https://www.bonusbits.com/wiki/HowTo:Configure_SendMail_to_Use_SMTP_Relay) to relay email to [SendPulse](https://sendpulse.com/), now I should receive email notification every time something _funny_ is happening on my server.
