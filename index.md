@@ -5,4 +5,3 @@ I'm a technology enthusiast since youth. As most of the kids I got attracted by 
 Since 2005 I had the luck to make coding my profession and since then the fun never stopped :)
 
 
- 
