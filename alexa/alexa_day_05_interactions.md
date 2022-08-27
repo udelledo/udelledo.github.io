@@ -24,7 +24,7 @@ The current state of intents and their link is far too naive to be an effective 
 ```mermaid
 flowchart LR
     subgraph launch[Launch]
-        activate(Open cinema \naround me)
+        activate>Open cinema \naround me]
     end
     user(User) -->|Activate\nthe skill| activate
     subgraph update[Update information]
@@ -33,13 +33,29 @@ flowchart LR
     activate -.->|Action started\nautomatically\nif no information\n is available| scrape
     activate -->|Action on user request| scrape
     scrape-->movieNumber
-    activate --> movieNumber
+    activate --> which
     subgraph listGraph[List movies]
+        which>which movies]
         movieNumber{Are move then\n5 movies?} -->|no| list[[List all movies]]
-        movieNumber -->|yes| filtering[[provide\nfiltering\noptions]]
+        movieNumber -->|yes| capturingOption
+        capturingOption --> movieNumber
+        subgraph capture[Capture slots]
+        capturingOption[[List options]] --> language[Language]
+        end
     end
     subgraph goingToTheMovie
         movieWatched(Save watched\nmovie)
     end
     activate --> movieWatched
+    user-->which
+    which-->movieNumber
 ```
+
+## Splitting intent
+
+~~Now that we have a working system that initialize at first launch and saves the first information we can realize that the first time it executes, it needs an uncomfortable amount of time to provide feedback.
+It seems considerate to provide an early feedback and delegate the scraping and saving to a separate intention.~~
+
+~~Time to take a look at [chaning intentions](https://developer.amazon.com/en-US/blogs/alexa/alexa-skills-kit/2019/03/intent-chaining-for-alexa-skill)~~
+
+The simplest solution is to leave the skill session open configuring the responseBuilder with the method `responseBuilder.withShouldEndSession(false)`. This way Alexa will expect some more utterances before closing the session.
