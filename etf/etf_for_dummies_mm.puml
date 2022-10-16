@@ -1,0 +1,42 @@
+@startmindmap
+'https://plantuml.com/mindmap-diagram
+
+caption ETF For Dummies
+title ETF For Dummies
+
+* <&flag>ETF For\n Dummies
+** The ABC of ETF
+**:Building the stock
+side of your portfolio;
+*** Risk control
+*** Investment grid
+**** Large growth
+**** Large value
+**** Small growth
+**** Small value
+***:Investing
+globally;
+***:Investing by
+sector;
+*** Specialized stocks
+**: Adding bonds, REITs
+and other ETFs to your
+portfolio;
+left side
+**: Putting it all
+together;
+** The part of tens
+** Appendixes
+
+
+header
+My super header
+endheader
+
+center footer MindMap of the book\nstructure and main topics
+
+'legend right
+'  Short
+'  legend
+'endlegend
+@endmindmap
