@@ -4,20 +4,42 @@
 caption ETF For Dummies
 title ETF For Dummies
 
-* <&flag>ETF For\n Dummies
-** The ABC of ETF
-**:Building the stock
+* <&book>
+** <b>I</b> - The ABC of ETF
+**:<b>II</b> - Building the stock
 side of your portfolio;
 *** Risk control
-*** Investment grid
+*** Investment styles
 **** Large growth
 **** Large value
 **** Small growth
 **** Small value
-***:Investing
-globally;
-***:Investing by
-sector;
+***:     <b>Investing globally</b>
+====
++ International markets tend
+   to have over-performing
+   cycles
+
+- Watch out for taxes on
+  dividends from foreign
+  markets
+- Slow-growing economies
+  tend to make for better
+  stock investment;
+****:                    <b>Key factors</b>
+====
+
++ Beware of the correlation between
+   markets
++ Prefer regions to specific countries
++ Think about investment styles
++ Appropriate risk tolerance
++ Look at P/E Ratio;
+***:      <b>Investing by sector</b>
+====
+- No standard methodology
+  to split by sector
+;
 *** Specialized stocks
 **: Adding bonds, REITs
 and other ETFs to your
@@ -29,11 +51,11 @@ together;
 ** Appendixes
 
 
-header
-My super header
-endheader
+'header
+'My super header
+'endheader
 
-center footer MindMap of the book\nstructure and main topics
+center footer: MindMap of the book\n structure and main topics
 
 'legend right
 '  Short
